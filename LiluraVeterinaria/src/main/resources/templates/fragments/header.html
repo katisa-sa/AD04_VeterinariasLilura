@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    
+    <style>
+        /* Estilos para el header con imagen de fondo */
+        .navbar-container {
+            background-image: url('/static/tiraimagenesveterinaria.png'); 
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            padding: 30px 0; /* Puedes ajustar el espacio superior e inferior */
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        /* Estilos para asegurar que el contenido del navbar sea legible sobre la imagen */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+        }
+        .nav-link {
+            color: #fff !important;
+        }
+        .dropdown-menu {
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro para el dropdown */
+        }
+        .dropdown-item {
+            color: #fff;
+        }
+        .dropdown-item:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div th:fragment="header">
+        <!-- Navbar con imagen de fondo -->
+        <div class="navbar-container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="">Veterinarias Lilura</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/">Tu mascota es nuestro tesoro</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menú</a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="/mamiferos">Mamíferos</a></li>
+                                    <li><a class="dropdown-item" href="/sedes">Sedes</a></li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li><a class="dropdown-item" href="#">Contactar</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    
+</body>
+</html>
