@@ -16,6 +16,7 @@
      	<th scope="col">Ciudad</th>
       	<th scope="col">Telefono</th>
     </tr>
+    <!-- Enlazar tabla con datos en mySql -->
     <tr th:each="sede : ${sedes}">
         <td scope="row" th:text="${sede.name}"></td>
         <td scope="row" th:text="${sede.direccion}"></td>

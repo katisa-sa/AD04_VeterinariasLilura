@@ -9,6 +9,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+//lombok para añadir getters, setters y constructores
 @Getter
 @Setter
 @NoArgsConstructor

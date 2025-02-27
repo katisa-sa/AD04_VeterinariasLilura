@@ -9,6 +9,7 @@
 <body>
 <div th:replace="fragments/header :: header"></div>
 <h1>Lista Mamiferos</h1>
+<!-- crear tabla -->
 <table class="table table-striped">
      <tr>
       	<th scope="col">Nombre</th>
@@ -21,6 +22,7 @@
       	<th scope="col">Sede</th>
       	
     </tr>
+    <!-- Enlazar tabla con datos en mySql -->
     <tr th:each="mamifero : ${mamiferos}">
         <td scope="row" th:text="${mamifero.name}"></td>
         <td scope="row" th:text="${mamifero.dueño}"></td>
